@@ -37,6 +37,10 @@ There are 2 points to notice:
 1. Even though we're not using a Function App dataset, simply because that doesn't exist, it still matches your `REST` configuration with the managed private endpoint connection of your Function App. DEP will allow all connections that have managed private endpoints.
 1. Because authentication is in context of the linked service, DEP will allow that.
 
+## What about notebooks?
+
+Attempting to get an access token or using the linked service in a Synapse notebook, for Function Apps, will yield: `Linked Service Type 'RestService' not supported` or `Linked Service Type 'AzureFunction' not supported`, depending on the linked service type used. Some will work, such as a Azure ML workspace linked service, as explained here https://github.com/Azure/azure-sdk-for-python/issues/35452#issuecomment-2343629054, but in this scenario it's not useful. 
+
 ## License
 
 This work is licensed under a
