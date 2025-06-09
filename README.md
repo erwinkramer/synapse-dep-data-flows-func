@@ -18,7 +18,7 @@
 
    ![alt text](.images/linked-service.png)
 
-1. Create a managed private endpoint, pointing to the Function App. The `fqdns` must match the Function App domain(s):
+1. Create a managed private endpoint, pointing to the Function App. The `fqdns` in the managed private endpoint must match with the `REST` linked service `Base URL` domain part:
 
    ![alt text](.images/mpe.png)
 
