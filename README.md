@@ -14,11 +14,11 @@
 
    ![alt text](.images/functionapp.png)
 
-1. Create a `REST` linked service, pointing to your function app (via the `Base URL`), and the Entra ID app registration (via the `Microsoft Entra ID resource`):
+1. Create a `REST` linked service, pointing to your Function App (via the `Base URL`), and the Entra ID app registration (via the `Microsoft Entra ID resource`):
 
    ![alt text](.images/linked-service.png)
 
-1. Create a managed private endpoint, pointing to the function app. The fqdn must match the Function App domain:
+1. Create a managed private endpoint, pointing to the Function App. The `fqdns` must match the Function App domain(s):
 
    ![alt text](.images/mpe.png)
 
