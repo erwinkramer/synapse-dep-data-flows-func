@@ -7,7 +7,7 @@
 
 ## Reproduction steps
 
-1. Create an Entra ID app registration. In this sample, the `Application ID URI` is `api://bank-nl`.
+1. Create an Entra ID app registration. In this sample, the `Application ID URI` is `api://bank-nl`:
 ![alt text](.images/app.png)
 
 1. Create a Function App. In this sample, the app has the domain `func-otel.azurewebsites.net`. For demo purposes, add the following identity configuration to your Function App. The `Allowed identities` value is the `Object ID` of the system assigned identity of your Synapse resource in your tenant:
@@ -15,16 +15,18 @@
    ![alt text](.images/functionapp.png)
 
 1. Create a `REST` linked service, pointing to your function app (via the `Base URL`), and the Entra ID app registration (via the `Microsoft Entra ID resource`):
+
    ![alt text](.images/linked-service.png)
 
 1. Create a managed private endpoint, pointing to the function app. The fqdn must match the Function App domain:
+
    ![alt text](.images/mpe.png)
 
-1. Create `Data flow` with a [dataset](https://learn.microsoft.com/en-us/azure/data-factory/concepts-datasets-linked-services?tabs=data-factory) based of a `REST` store, and select the `REST` linked service you created earlier. 
+1. Create `Data flow` with a [dataset](https://learn.microsoft.com/en-us/azure/data-factory/concepts-datasets-linked-services?tabs=data-factory) based of a `REST` store, and select the `REST` linked service you created earlier:
 
    ![alt text](.images/dataflow.png)
 
-1. Finally, test your connection, this will actually use your system assigned identity and will attempt to call via your linked service. 
+1. Finally, test your connection, this will actually use your system assigned identity and will attempt to call via your linked service:
 
    ![alt text](.images/test.png)
 
