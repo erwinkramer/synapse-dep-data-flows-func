@@ -39,7 +39,7 @@ There are 2 points to notice:
 
 ## What about notebooks?
 
-Attempting to get an access token or using the linked service in a Synapse notebook, for Function Apps, will yield: `Linked Service Type 'RestService' not supported`  (for `REST` type) or `Linked Service Type 'AzureFunction' not supported` (for `Function App` type). Some will work, such as a Azure ML workspace linked service, as explained here https://github.com/Azure/azure-sdk-for-python/issues/35452#issuecomment-2343629054, but in this scenario it's not useful.
+Attempting to get an access token or using the linked service in a Synapse notebook, for Function Apps, will yield: `Linked Service Type 'RestService' not supported`  (for `REST` type) or `Linked Service Type 'AzureFunction' not supported` (for `Function App` type). Some will work, such as a Azure ML workspace linked service, as explained here https://github.com/Azure/azure-sdk-for-python/issues/35452#issuecomment-2343629054, but in this scenario it's not useful. For a list of supported types, see [Linked service connections supported from the Spark runtime](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-secure-credentials-with-tokenlibrary?pivots=programming-language-python#linked-service-connections-supported-from-the-spark-runtime).
 
 ## License
 
