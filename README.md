@@ -22,7 +22,7 @@
 
    ![alt text](.images/mpe.png)
 
-1. Create `Data flow` with a [dataset](https://learn.microsoft.com/en-us/azure/data-factory/concepts-datasets-linked-services?tabs=data-factory) based of a `REST` store, and select the `REST` linked service you created earlier:
+1. Create a [data flow](https://learn.microsoft.com/en-us/azure/synapse-analytics/concepts-data-flow-overview) with a [dataset](https://learn.microsoft.com/en-us/azure/data-factory/concepts-datasets-linked-services?tabs=data-factory) based on a `REST` store, and select the `REST` linked service you created earlier:
 
    ![alt text](.images/dataflow.png)
 
