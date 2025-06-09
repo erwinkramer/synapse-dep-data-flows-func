@@ -1,4 +1,4 @@
-# Synapse DEP-enabled workspace with secure Azure Function calls via Data flows
+# Synapse DEP-enabled workspace with secure Azure Function calls via Data flows 🌊
 
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/erwinkramer/synapse-dep-data-flows-func)
