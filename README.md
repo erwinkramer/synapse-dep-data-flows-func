@@ -3,6 +3,8 @@
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/erwinkramer/synapse-dep-data-flows-func)
 
+[Data exfiltration protection for Azure Synapse Analytics workspaces (DEP)](https://docs.azure.cn/en-us/synapse-analytics/security/workspace-data-exfiltration-protection) blocks external calls, even when trying to get tokens with custom audience from your Entra ID tenant. This sample proves that it is possible to do some flexible calls to a Function App in a DEP-enabled workspace, with custom token audience, without the need of pipelines. 
+
 ## Reproduction steps
 
 1. Create an Entra ID app registration. In this sample, the `Application ID URI` is `api://bank-nl`.
